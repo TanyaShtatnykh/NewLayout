@@ -1,0 +1,10 @@
+mixin request(modifier)
+  .request&attributes(attributes)
+    .request__area
+      img.request__photo(src="img/request.svg" alt="Кофе Бергамо")
+      .request__info
+        h2.request__title Оставьте заявку сейчас! <br> Получите пробник кофе - совершенно бесплатно!
+        form.request__form  
+          input.request__field(type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required)
+          button.request__submit Оставить заявку
+        p.request__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.

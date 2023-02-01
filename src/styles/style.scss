@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500&display=swap');
+
+body, ul, ol {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/hello/hello';
+@import './src/blocks/request/request';
