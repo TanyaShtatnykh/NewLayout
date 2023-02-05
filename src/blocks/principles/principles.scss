@@ -1,0 +1,33 @@
+.principles {
+  background-color: #1A1C1D;
+
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+  }
+  &__info {
+    width: 500px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin: 24px 0;
+    font-size: 17px;
+    line-height: 140%;
+  }
+  &__photo {
+    margin: 50px 40px -50px 0;
+  }
+}
