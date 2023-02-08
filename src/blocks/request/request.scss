@@ -35,7 +35,6 @@
 
   &__field {
     width: 444px;
-    height: 62px;
     margin: 20px 20px 20px 0;
     padding: 20px;
     background: #FFFFFF;
@@ -54,9 +53,7 @@
   }
 
   &__submit {
-    width: 240px;
-    height: 62px;
-    padding: 0;
+    padding: 20px 45px;
     background: #009688;
     border-radius: 100px;
     border: none;

@@ -17,6 +17,10 @@
     flex-direction: column;
     align-items: center;
   }
+  &__icon {
+    min-width: 120px;
+  }
+  
   &__description {
     margin-top: 20px;
     font-weight: 600;

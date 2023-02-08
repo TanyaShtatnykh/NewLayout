@@ -1,0 +1,58 @@
+.delivery {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    max-width: 500px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+  &__text {
+    margin-top: 32px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+  &__box-link {
+    margin-top: 52px;
+  }
+  &__link {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #009688;
+  }
+  &__link::before {
+    content: url("../img/delivery-truck.svg");
+    vertical-align: middle;
+    margin-right: 16px;
+  }
+  &__link:hover {
+    border-bottom: 4px solid #009688;
+  }
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 504px;
+  }
+  &__logo:not(:last-of-type):not(:nth-last-of-type(2)) {
+    border-bottom: 1px solid #EAEAEA;
+  }
+  &__logo:nth-of-type(odd) {
+    border-right: 1px solid #EAEAEA;
+  }
+}

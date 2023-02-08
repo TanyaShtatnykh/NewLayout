@@ -13,7 +13,8 @@
   &__logo-link {
     position: absolute;
     top: 10px;
-    left: -160px;
+    left: 0;
+    transform: translateX(calc(-100% + -20px));
   }
 
   &__menu-list {
@@ -39,7 +40,6 @@
   }
   &__menu-link:hover {
     border-bottom: 4px solid #332F2F;
-
   }
 
   &__contacts {
@@ -57,8 +57,7 @@
   }
 
   &__request-btn {
-    width: 200px;
-    height: 56px;
+    padding: 20px 40px;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -66,7 +65,7 @@
     border: 2px solid #009688;
     border-radius: 100px;
     outline: none;
-    background: rgba(0, 0, 0, 0);
+    background: none;
   }
   &__request-btn:hover {
     background-color: #00B0A0;
