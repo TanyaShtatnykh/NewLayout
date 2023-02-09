@@ -1,0 +1,47 @@
+.production {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 100px;
+  }
+  &__quality {
+    max-width: 480px;
+    margin-right: auto;
+  }
+  &__quality-title {
+    margin-bottom: 40px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+  &__quality-text {
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+  &__stage {
+    display: flex;
+    justify-content: space-between;
+    min-height: 114px;
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  &__stage-title {
+    align-self: center;
+    max-width: 300px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1A1C1D;
+  }
+  &__stage-text {
+    max-width: 704px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+}

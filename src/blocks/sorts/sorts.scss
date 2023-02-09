@@ -1,0 +1,64 @@
+.sorts {
+  background-color: #F5F8F9;
+
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 100px 0 54px;
+  }
+
+  &__range {
+    margin-right: auto;
+  }
+  &__range-title {
+    max-width: 600px;
+    margin-bottom: 40px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+  &__range-text {
+    max-width: 500px;
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #332F2F;
+  }
+
+  &__pricelist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__price-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__price-title {
+    margin: 28px 0 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1A1C1D;
+  }
+  &__price-text {
+    max-width: 290px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+    margin-bottom: auto;
+  }
+  &__price {
+    margin-top: 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+}
