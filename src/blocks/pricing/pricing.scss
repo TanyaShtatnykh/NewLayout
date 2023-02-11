@@ -1,0 +1,52 @@
+.pricing {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 108px auto 112px;
+  }
+  &__price-quality {
+    max-width: 500px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__text {
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+  &__conditions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__condition {
+    min-width: 500px;
+    background-color: #F5F8F9;
+    padding: 30px 58px 78px;
+    text-align: center;
+  }
+  &__min-value {
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 119px;
+    text-transform: uppercase;
+    color: #32363C;
+  }
+  &__comment {
+    max-width: 384px;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+}

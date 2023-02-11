@@ -1,0 +1,57 @@
+.staff {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 130px auto 66px;
+  }
+  &__history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__title {
+    max-width: 600px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+  &__link-history {
+    padding: 20px 60px;
+    text-decoration: none;
+    background: #009688;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+  &__link-history:hover {
+    background: #00B0A0;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__person {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+  }
+  &__name {
+    margin: 30px 0 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #32363C;
+  }
+  &__post {
+    font-size: 15px;
+    line-height: 140%;
+    color: #989A9D;
+  }
+}
