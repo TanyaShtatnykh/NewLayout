@@ -1,0 +1,104 @@
+.footer {
+  border-top: 1px solid #EAEAEA;
+
+  &__area, &__copyright {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__area {
+    padding: 50px 0 40px;
+  }
+  &__warning, &__menu-proposal, &__menu-help, &__contacts {
+    max-width: 225px;
+  }
+  &__logo {
+    margin: calc(-50% + -10px) 0px 20px;
+  }
+  &__text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #9F9F9F;
+  }
+  &__menu-proposal, &__menu-help {
+    padding-top: 8px;
+  }
+  &__proposal, &__help {
+    margin-bottom: 20px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #32363C;
+  }
+  &__proposal-item, &__help-item, &__phone {
+    margin-bottom: 16px;
+  }
+  &__proposal-link, &__help-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9F9F9F;
+  }
+  &__proposal-link:hover, &__help-link:hover {
+    border-bottom: 2px solid #32363C;
+  }
+  &__coffee {
+    color: #009688;
+  }
+  &__coffee:hover {
+    border-bottom: 2px solid #009688;
+  }
+  &__phone-link {
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32363C;
+  }
+  &__socials {
+    display: flex;
+  }
+  &__social-item:not(:first-child) {
+    margin-left: 10px;
+  }
+  &__email {
+    margin: 16px 0;
+  }
+  &__email-link, &__address {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D30;
+  }
+  &__map-link {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    color: #2F80ED;
+  }
+  &__copyright {
+    padding: 20px 0;
+    border-top: 1px solid #EAEAEA;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+  }
+  &__privacy-link {
+    text-decoration: none;
+    color: #9F9F9F;
+  }
+}

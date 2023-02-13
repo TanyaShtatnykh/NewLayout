@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@400;700&family=Oswald:wght@400;500&display=swap');
 
 body, ul, ol {
   font-family: 'Lato', sans-serif;
@@ -31,3 +31,4 @@ h1,h2,h3,h4,h5,h6,p{
 @import './src/blocks/sorts/sorts';
 @import './src/blocks/staff/staff';
 @import './src/blocks/pricing/pricing';
+@import './src/blocks/footer/footer';
