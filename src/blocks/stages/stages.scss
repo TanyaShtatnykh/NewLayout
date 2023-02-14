@@ -1,0 +1,55 @@
+.stages {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 80px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: section;
+  }
+  &__item {
+    position: relative;
+    max-width: 295px;
+    margin: 78px 0 58px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #32363C;
+  }
+  &__item:not(:first-child):not(:nth-child(3n+4))::before {
+    content: ">";
+    position: absolute;
+    top: -25px;
+    transform: translateX(calc(-100% + -44px));
+    margin-left: 10px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 119px;
+    text-transform: uppercase;
+    color: #F5F8F9;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #32363C;
+  }
+  &__text::before {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: -1;
+    counter-increment: section;
+    content: "0"counter(section)".";
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 119px;
+    text-transform: uppercase;
+    color: #F5F8F9;
+  }
+}
