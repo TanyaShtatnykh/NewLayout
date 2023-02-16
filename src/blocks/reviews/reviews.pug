@@ -1,0 +1,15 @@
+mixin reviews(modifier)
+  section.reviews&attributes(attributes)
+    .reviews__area
+      h2.reviews__title Что о нас говорят наши клиенты
+      .reviews__block
+        button.reviews__btn(type="button"): img.reviews__btn-image(src="img/toback.svg" alt="Назад")
+        .reviews__content
+          .reviews__images 
+            img.reviews__client-photo(src="img/karina.png" alt="")
+            img.reviews__logo(src="img/logo.svg" alt="")
+          .reviews__text-content
+            h3.reviews__client-name Карина
+            p.reviews__client-company Генеральный директор OOO “Huvitz”
+            p.reviews__text Очень удобно, что в наше время стала жизнь проще и есть такие вот компании, как ПКМ. Мы давно мечтали купить на работу кофемашину и пить вкусный кофе, но цены на хорошую очень высоки, а вот взять кофемашину в аренду бесплатно при покупке качественного кофе вполне доступно. Узнала об этой компании от друзей. Они уже около года работают с ними и мы очень довольны обслуживанием. Машины все в идеальном состоянии, работают прекрасно, без нареканий. Машины чистят и проверяют регулярно. Так что у нас голова ни о чем не болит!
+        button.reviews__btn(type="button"): img.reviews__btn-image(src="img/forward.svg" alt="Назад")
