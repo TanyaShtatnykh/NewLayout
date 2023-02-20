@@ -2,43 +2,43 @@
   background: #F5F8F9;
 
   &__area {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     padding: 80px 0 50px;
+    border-bottom: 1px solid #EAEAEA;
   }
   &__info {
     max-width: 540px;
   }
   &__title {
+    margin-bottom: 30px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 59px;
     text-transform: uppercase;
     color: #1A1C1D;
-    margin-bottom: 30px;
   }
   &__slogan {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 0 0 18px -8px;
     font-size: 50px;
     line-height: 100%;
     color: rgba(#000000, 0.2);
-    align-items: center;
-    margin-left: -8px;
-    margin-bottom: 18px;
   }
   &__phrase {
-    background: #FED96A;
-    border-radius: 20px;
+    margin: 0 8px -5px;
     padding: 0 10px;
     font-size: 24px;
     line-height: 120%;
     color: #32363C;
-    margin: 0 8px -5px;
+    background: #FED96A;
+    border-radius: 20px;
   }
   &__text {
     font-size: 17px;

@@ -1,26 +1,24 @@
 .advantages {
-  &__area {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
   &__list {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    padding: 134px 0 114px;
+    padding: 130px 0 114px;
   }
   &__item {
-    max-width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 330px;
   }
   &__icon {
     min-width: 120px;
   }
-  
   &__description {
     margin-top: 20px;
     font-weight: 600;

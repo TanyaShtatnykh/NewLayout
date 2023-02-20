@@ -11,7 +11,7 @@
   </head>
   <body>
       <header class="header">
-        <div class="header__area"><a class="header__logo-link" href="#"><img class="header__logo" src="img/logo.svg" alt="Логотип"></a>
+        <div class="header__area"><a class="header__logo-link" href="#"><img class="header__logo" src="img/logo.png" alt="Логотип"></a>
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item"><a class="header__menu-link" href="#">Кофе оптом</a></li>
@@ -19,8 +19,7 @@
               <li class="header__menu-item"><a class="header__menu-link" href="#">Бесплатная кофемашина</a></li>
             </ul>
           </nav>
-          <div class="header__contacts">
-            <p class="header__phone"><a class="header__phone-link" href="tel:+78126034911">+7 812 603 49 11</a></p>
+          <div class="header__contacts"><a class="header__phone-link" href="tel:+78126034911">+7 812 603 49 11</a>
             <button class="header__request-btn" type="button">Оставить заявку</button>
           </div>
         </div>
@@ -35,9 +34,10 @@
         </div>
       </section>
       <section class="request">
-        <div class="request__area"><img class="request__photo" src="img/request.svg" alt="Кофе Бергамо">
+        <div class="request__area"><img class="request__photo request__photo--cup" src="img/requestPack.png" alt="">
           <div class="request__info">
-            <h2 class="request__title">Оставьте заявку сейчас!<br>Получите пробник кофе - совершенно бесплатно!</h2>
+            <p class="request__slogan"></p>
+            <h2 class="request__title"><span class="request__title-text">Оставьте заявку сейчас!</span><span class="request__title-text">Получите пробник кофе - совершенно бесплатно!</span></h2>
             <form class="request__form"> 
               <input class="request__field" type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required>
               <button class="request__submit">Оставить заявку</button>
@@ -47,19 +47,17 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__area">
-          <ul class="advantages__list">
-            <li class="advantages__item"><img class="advantages__icon" src="img/beans.svg" alt="">
-              <p class="advantages__description">Закупаем кофе с плантаций без&nbsp;посредников</p>
-            </li>
-            <li class="advantages__item"><img class="advantages__icon" src="img/beanRoast.svg" alt="">
-              <p class="advantages__description">Обжариваем зерна на&nbsp;собственном производстве</p>
-            </li>
-            <li class="advantages__item"><img class="advantages__icon" src="img/coffeeBeans.svg" alt="">
-              <p class="advantages__description">Предлагаем доступные цены за&nbsp;преимум качество</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item"><img class="advantages__icon" src="img/beans.png" alt="">
+            <p class="advantages__description">Закупаем кофе с плантаций без&nbsp;посредников</p>
+          </li>
+          <li class="advantages__item"><img class="advantages__icon" src="img/beanRoast.png" alt="">
+            <p class="advantages__description">Обжариваем зерна на&nbsp;собственном производстве</p>
+          </li>
+          <li class="advantages__item"><img class="advantages__icon" src="img/coffeeBeans.png" alt="">
+            <p class="advantages__description">Предлагаем доступные цены за&nbsp;преимум качество</p>
+          </li>
+        </ul>
       </section>
       <section class="about">
         <div class="about__area">
@@ -72,28 +70,26 @@
         </div>
       </section>
       <section class="stages">
-        <div class="stages__area">
-          <ul class="stages__list">
-            <li class="stages__item">
-              <p class="stages__text">Закупаем и привозим свежие зерна кофе со&nbsp;всего мира</p>
-            </li>
-            <li class="stages__item">
-              <p class="stages__text">Обжариваем на&nbsp;технологичных ростерах Typhoon</p>
-            </li>
-            <li class="stages__item">
-              <p class="stages__text">Затем осуществляется контроль качества и&nbsp;каппинг каждой партии</p>
-            </li>
-            <li class="stages__item">
-              <p class="stages__text">Далее отправляем свежеобжаренный кофе на фасовку и упаковку</p>
-            </li>
-            <li class="stages__item">
-              <p class="stages__text">После чего готовый продукт передается в&nbsp;отдел доставки</p>
-            </li>
-            <li class="stages__item">
-              <p class="stages__text">Вы получаете поставку свежего кофе во время и&nbsp;без задержек</p>
-            </li>
-          </ul>
-        </div>
+        <ul class="stages__list">
+          <li class="stages__item">
+            <p class="stages__text">Закупаем и привозим свежие зерна кофе со&nbsp;всего мира</p>
+          </li>
+          <li class="stages__item">
+            <p class="stages__text">Обжариваем на&nbsp;технологичных ростерах Typhoon</p>
+          </li>
+          <li class="stages__item">
+            <p class="stages__text">Затем осуществляется контроль качества и&nbsp;каппинг каждой партии</p>
+          </li>
+          <li class="stages__item">
+            <p class="stages__text">Далее отправляем свежеобжаренный кофе на фасовку и упаковку</p>
+          </li>
+          <li class="stages__item">
+            <p class="stages__text">После чего готовый продукт передается в&nbsp;отдел доставки</p>
+          </li>
+          <li class="stages__item">
+            <p class="stages__text">Вы получаете поставку свежего кофе во время и&nbsp;без задержек</p>
+          </li>
+        </ul>
       </section>
       <section class="principles">
         <div class="principles__area">
@@ -111,8 +107,7 @@
             <h2 class="delivery__title">Оперативная и отлаженная доставка свежего кофе</h2>
             <p class="delivery__text">Доставляем свежеобжаренный кофе с нашего производства в&nbsp;любую точку России в среднем за 5 дней после заказа.</p>
             <p class="delivery__text">Логистика по всей России отлажена до мелочей. Мы поможем с&nbsp;выбором транспортной компании, которая доставляет в ваш город.</p>
-            <p class="delivery__text">Для клиентов из Санкт-Петербурга доставляем кофе на автомобилях компании на следующий день после заказа.</p>
-            <div class="delivery__box-link"><a class="delivery__link">Узнать о доставке в мой город</a></div>
+            <p class="delivery__text">Для клиентов из Санкт-Петербурга доставляем кофе на автомобилях компании на следующий день после заказа.</p><a class="delivery__link">Узнать о доставке в мой город</a>
           </div>
           <ul class="delivery__logos">
             <li class="delivery__logo"><img class="delivery__photo" src="img/1.png" alt="СДЭК"></li>
@@ -183,6 +178,19 @@
           </ul>
         </div>
       </section>
+      <section class="request">
+        <div class="request__area"><img class="request__photo request__photo--holder" src="img/requestHolder.png" alt="">
+          <div class="request__info">
+            <p class="request__slogan"></p>
+            <h2 class="request__title"><span class="request__title-text">Оставьте заявку сейчас!</span><span class="request__title-text">Получите оптовый прайс на весь ассортимент.</span></h2>
+            <form class="request__form"> 
+              <input class="request__field" type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required>
+              <button class="request__submit">Оставить заявку</button>
+            </form>
+            <p class="request__text">Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.</p>
+          </div>
+        </div>
+      </section>
       <section class="reviews">
         <div class="reviews__area">
           <h2 class="reviews__title">Что о нас говорят наши клиенты</h2>
@@ -221,6 +229,15 @@
           </ul>
         </div>
       </section>
+      <section class="subscribe">
+        <div class="subscribe__area">
+          <h2 class="subscribe__title">Подписывайтесь на&nbsp;новости и акции</h2>
+          <form class="subscribe__form"> 
+            <input class="subscribe__field" type="email" placeholder="Введите ваш email" required>
+            <button class="subscribe__submit">Подписаться</button>
+          </form>
+        </div>
+      </section>
       <section class="pricing">
         <div class="pricing__area">
           <div class="pricing__price-quality">
@@ -238,6 +255,19 @@
               <p class="pricing__comment">Стоимость за 1 кг. кофе свежей обжарки</p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="request">
+        <div class="request__area"><img class="request__photo request__photo--cup" src="img/requestCup.png" alt="">
+          <div class="request__info request__info--cup">
+            <p class="request__slogan">Делаем кофе, который пьем сами!</p>
+            <h2 class="request__title request__title--cup"><span class="request__title-text">Оставьте заявку сейчас!</span><span class="request__title-text">Получите каталог сортов кофе с подробным описанием и оптовыми ценами!</span></h2>
+            <form class="request__form"> 
+              <input class="request__field" type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required>
+              <button class="request__submit">Оставить заявку</button>
+            </form>
+            <p class="request__text">Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.</p>
+          </div>
         </div>
       </section>
       <footer class="footer">

@@ -1,11 +1,11 @@
 .delivery {
   &__area {
-    width: 100%;
-    max-width: 1080px;
-    margin: 130px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: 130px auto;
   }
   &__info {
     max-width: 500px;
@@ -25,23 +25,26 @@
     line-height: 140%;
     color: #32363C;
   }
-  &__box-link {
-    margin-top: 52px;
-  }
   &__link {
-    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 52px;
     font-weight: 600;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 20px;
     color: #009688;
+    border-bottom: 4px solid transparent;
   }
   &__link::before {
-    content: url("../img/delivery-truck.svg");
+    content: url("../img/delivery-truck.png");
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 14px;
     vertical-align: middle;
-    margin-right: 16px;
   }
   &__link:hover {
     border-bottom: 4px solid #009688;
+    cursor: pointer;
   }
   &__logos {
     display: flex;
@@ -49,8 +52,8 @@
     justify-content: flex-end;
     max-width: 504px;
   }
-  &__logo:not(:last-of-type):not(:nth-last-of-type(2)) {
-    border-bottom: 1px solid #EAEAEA;
+  &__logo:nth-child(n+3) {
+    border-top: 1px solid #EAEAEA;
   }
   &__logo:nth-of-type(odd) {
     border-right: 1px solid #EAEAEA;
