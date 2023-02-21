@@ -1,14 +1,10 @@
 .production {
-  &__area {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto 100px;
-  }
-  &__quality {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 100px;
+
+  &__title {
     max-width: 480px;
-    margin-right: auto;
-  }
-  &__quality-title {
     margin-bottom: 40px;
     font-family: 'Oswald';
     font-weight: 500;
@@ -17,7 +13,8 @@
     text-transform: uppercase;
     color: #1A1C1D;
   }
-  &__quality-text {
+  &__text {
+    max-width: 480px;
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 140%;

@@ -1,16 +1,12 @@
 mixin pricing(modifier)
   section.pricing&attributes(attributes)
-    .pricing__area
-      .pricing__price-quality
-        h2.pricing__title Доступная цена на кофе свежей обжарки
-        p.pricing__text Кофе собирается на плантациях и проходит через множество этапов прежде чем попасть в вашу кофемашину. 
-        p.pricing__text Наш конроль качества зерна начинается с момента сбора урожая и заканчивается приготовлением первой чашки кофе для каждой партии.
-      ul.pricing__conditions
-        li.pricing__condition
-          p.pricing__min-value от 10 кг.
-          p.pricing__comment Минимальная партия оптового заказа 
-        li.pricing__condition
-          p.pricing__min-value от 480 ₽
-          p.pricing__comment Стоимость за 1 кг. кофе свежей обжарки
-//- Нужен ли тут список или достаточно дивов?
-//- И может все же нужно заголовком крупный текст в блоках?
+    h2.pricing__title Доступная цена на кофе свежей обжарки
+    p.pricing__text Кофе собирается на плантациях и проходит через множество этапов прежде чем попасть в вашу кофемашину. 
+    p.pricing__text Наш конроль качества зерна начинается с момента сбора урожая и заканчивается приготовлением первой чашки кофе для каждой партии.
+    .pricing__conditions
+      .pricing__condition
+        p.pricing__min-value от 10 кг.
+        p.pricing__comment Минимальная партия оптового заказа 
+      .pricing__condition
+        p.pricing__min-value от 480 ₽
+        p.pricing__comment Стоимость за 1 кг. кофе свежей обжарки

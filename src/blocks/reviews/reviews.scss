@@ -1,13 +1,12 @@
 .reviews {
-  &__area {
-    width: 100%;
-    max-width: 1080px;
-    margin: 130px auto 0;
-  }
+  width: 100%;
+  max-width: 1080px;
+  margin: 130px auto 0;
+
   &__title {
     max-width: 400px;
     margin-bottom: 40px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 59px;
@@ -20,11 +19,18 @@
     align-items: flex-start;
   }
   &__btn {
-    max-height: 90px;
+    min-width: 90px; // Не придумала как иначе сделать размеры
+    min-height: 90px;
     padding: 25px;
     border: none;
     border-radius: 0px 4px 4px 0px;
-    background-color: #F5F8F9;
+    background: #F5F8F9 url(../img/arrow.png) no-repeat center;
+  }
+  &__block > &__btn:first-of-type {
+    transform: rotate(180deg);
+  }
+  &__btn:hover {
+    cursor: pointer;
   }
   &__content {
     display: flex;
@@ -38,8 +44,8 @@
     align-items: center;
     margin-right: 46px;
   }
-  &__client-photo {
-    margin-bottom: 40px;
+  &__logo {
+    margin: auto;
   }
   &__client-name {
     margin-bottom: 4px;

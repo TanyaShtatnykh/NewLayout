@@ -8,24 +8,23 @@
     padding: 100px 0 54px;
     border-bottom: 1px solid #EAEAEA;
   }
-  &__range-title {
+  &__title {
     max-width: 600px;
     margin-bottom: 40px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 59px;
     text-transform: uppercase;
     color: #1A1C1D;
   }
-  &__range-text {
+  &__text {
     max-width: 500px;
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 140%;
     color: #332F2F;
   }
-
   &__pricelist {
     display: flex;
     justify-content: space-between;
@@ -44,14 +43,14 @@
   }
   &__price-text {
     max-width: 290px;
+    margin-bottom: auto;
     font-size: 17px;
     line-height: 140%;
     color: #32363C;
-    margin-bottom: auto;
   }
   &__price {
     margin-top: 20px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;

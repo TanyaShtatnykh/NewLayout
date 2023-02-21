@@ -1,9 +1,8 @@
 .staff {
-  &__area {
-    width: 100%;
-    max-width: 1080px;
-    margin: 130px auto 66px;
-  }
+  width: 100%;
+  max-width: 1080px;
+  margin: 130px auto 66px;
+
   &__history {
     display: flex;
     justify-content: space-between;
@@ -12,7 +11,7 @@
   }
   &__title {
     max-width: 600px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 59px;
@@ -22,12 +21,12 @@
   &__link-history {
     padding: 20px 60px;
     text-decoration: none;
-    background: #009688;
-    border-radius: 100px;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    background: #009688;
+    border-radius: 100px;
   }
   &__link-history:hover {
     background: #00B0A0;
