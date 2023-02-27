@@ -3,7 +3,8 @@ mixin request(photo="Pack", title="", slogan="")
     .request__area
       img.request__photo(src=`img/request${photo}.png` alt="" class=photo==="Holder" ? "request__photo--holder" : "Cup" ? "request__photo--cup" : "")
       .request__info(class=photo==="Cup" ? "request__info--cup" : "")
-        p.request__slogan=slogan
+        if (slogan)
+          p.request__slogan=slogan
         h2.request__title(class=photo==="Cup" ? "request__title--cup" : "")
           span.request__title-text Оставьте заявку сейчас!
           span.request__title-text=title
@@ -11,3 +12,5 @@ mixin request(photo="Pack", title="", slogan="")
           input.request__field(type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required)
           button.request__submit Оставить заявку
         p.request__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.
+
+//-форма с другой картинкой и красной кнопкой погнали

@@ -1,12 +1,15 @@
 mixin header(modifier)
   header.header&attributes(attributes)
     .header__area
+      img.header__burger(src="img/burger.svg" alt="")
       a.header__logo-link(href="#"): img.header__logo(src="img/logo.png" alt="Логотип")
-      nav.header__menu
-        ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#") Кофе оптом
-          li.header__menu-item: a.header__menu-link(href="#") White Label
-          li.header__menu-item: a.header__menu-link(href="#") Бесплатная кофемашина
-      .header__contacts
-        a.header__phone-link(href="tel:+78126034911") +7 812 603 49 11
-        button.header__request-btn(type="button") Оставить заявку
+      img.header__mail(src="img/mail.svg" alt="")
+      .header__info
+        nav.header__menu
+          ul.header__menu-list
+            li.header__menu-item: a.header__menu-link(href="#") Кофе оптом
+            li.header__menu-item: a.header__menu-link(href="#") White Label
+            li.header__menu-item: a.header__menu-link(href="#") Бесплатная кофемашина
+        .header__contacts
+          a.header__phone-link(href="tel:+78126034911") +7 812 603 49 11
+          button.header__request-btn(type="button") Оставить заявку
