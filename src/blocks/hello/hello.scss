@@ -17,36 +17,127 @@
     margin-bottom: 30px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 59px;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(59, 40);
     text-transform: uppercase;
     color: #1A1C1D;
   }
   &__slogan {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     margin: 0 0 18px -8px;
-    font-size: 50px;
-    line-height: 100%;
-    color: rgba(#000000, 0.2);
   }
   &__phrase {
     margin: 0 8px -5px;
     padding: 0 10px;
-    font-size: 24px;
+    font-size: px-to-em(24);
     line-height: 120%;
     color: #32363C;
     background: #FED96A;
     border-radius: 20px;
   }
+  &__dash {
+    font-size: px-to-em(40);
+    line-height: 100%;
+    color: rgba(#000000, 0.2);
+  }
   &__text {
-    font-size: 17px;
+    font-size: px-to-em(17);
     line-height: 140%;
     color: #332F2F;
   }
-  &__photo {
-    position: relative;
-    box-shadow: 0px 20px 10px -15px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 1440px) {
+    &__area {
+      padding: 90px 15px 50px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    &__area {
+      padding-top: 100px;
+    }
+    &__info {
+      max-width: 500px;
+    }
+    &__photo {
+      max-width: 450px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &__area {
+      padding-top: 140px;
+    }
+    &__info {
+      max-width: 460px;
+    }
+    &__title {
+      margin-bottom: 24px;
+      font-size: px-to-em(36);
+    }
+    &__phrase {
+      font-size: px-to-em(20);
+    }
+    &__dash {
+      font-weight: 600;
+      font-size: px-to-em(20);
+    }
+    &__text {
+      font-size: px-to-em(16);
+    }
+    &__photo {
+      max-width: 430px;
+    }
+  }
+  @media screen and (max-width: 860px) {
+    &__area {
+      flex-direction: column;
+      max-width: 430px;
+      padding-bottom: 80px;
+    }
+    &__photo {
+      margin: 40px 0 0 0;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    &__area {
+      max-width: 360px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(32);
+    }
+    &__phrase {
+      font-size: px-to-em(16);
+    }
+    &__dash {
+      margin-top: 2px;
+      font-weight: 600;
+      font-size: px-to-em(16);
+    }
+    &__text {
+      font-size: px-to-em(16);
+    }
+    &__photo {
+      margin: 40px 0 0 0;
+    }
+    @media screen and (max-width: 358px) {
+      &__title {
+        margin-bottom: 20px;
+        font-size: px-to-em(28);
+      }
+      &__phrase {
+        font-size: px-to-em(12);
+      }
+      &__dash {
+        margin-top: 6px;
+        font-weight: 600;
+        font-size: px-to-em(12);
+      }
+      &__text {
+        font-size: px-to-em(12);
+      }
+    }
   }
 }
