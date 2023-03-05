@@ -1,16 +1,21 @@
-mixin request(photo="Pack", title="", slogan="")
+mixin request(photo="Pack", title="")
   section.request&attributes(attributes)
-    .request__area
-      img.request__photo(src=`img/request${photo}.png` alt="" class=photo==="Holder" ? "request__photo--holder" : "Cup" ? "request__photo--cup" : "")
-      .request__info(class=photo==="Cup" ? "request__info--cup" : "")
-        if (slogan)
-          p.request__slogan=slogan
+    .request__area(class=photo==="Holder" ? "request__area--holder" : "")
+      img.request__photo(src=`img/request${photo}.png` alt="" class=photo==="Holder" ? "request__photo--holder" : "" class=photo==="Cup" ? "request__photo--cup" : "" class=photo==="Exam" ? "request__photo--exam" : "")
+      .request__info(class=photo==="Holder" ? "request__info--holder" : "" class=photo==="Cup" ? "request__info--cup" : "")
+        if (photo==="Cup")
+          p.request__slogan Делаем кофе, который пьем сами!
+        else if (photo==="Exam")
+          p.request__slogan Кажется получилось!
         h2.request__title(class=photo==="Cup" ? "request__title--cup" : "")
           span.request__title-text Оставьте заявку сейчас!
           span.request__title-text=title
         form.request__form  
           input.request__field(type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required)
-          button.request__submit Оставить заявку
+          if (photo==="Exam")
+            button.request__submit--exam Погнали
+          else
+            button.request__submit Оставить заявку
         p.request__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.
 
-//-форма с другой картинкой и красной кнопкой погнали
+//- убрала переменную slogan
