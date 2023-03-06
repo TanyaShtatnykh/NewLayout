@@ -14,14 +14,14 @@
     margin-bottom: 8px;
     font-family: 'Oswald';
     font-weight: 500;
-    font-size: 40px;
-    line-height: 59px;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(59, 40);
     text-transform: uppercase;
     color: #1A1C1D;
   }
   &__text {
     margin-top: 32px;
-    font-size: 17px;
+    font-size: px-to-em(17);
     line-height: 140%;
     color: #32363C;
   }
@@ -29,10 +29,11 @@
     display: inline-block;
     margin-top: 52px;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(20, 18);
     color: #009688;
     border-bottom: 4px solid transparent;
+    transition: 0.5s;
   }
   &__link::before {
     content: url("../img/delivery-truck.png");
@@ -57,5 +58,55 @@
   }
   &__logo:nth-of-type(odd) {
     border-right: 1px solid #EAEAEA;
+  }
+  @media screen and (max-width: 1100px) {
+    &__area {
+      padding: 0 15px;
+    }
+    &__title {
+      font-size: px-to-em(36);
+    }
+    &__text {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &__area {
+      flex-direction: column;
+      max-width: 490px;
+      padding: 0;
+    }
+    &__info {
+      padding: 0 15px;
+    }
+    &__logos {
+      justify-content: center;
+      margin-top: 40px;
+    }
+    &__photo {
+      max-width: 244px;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    &__title {
+      margin-top: 80px;
+      font-size: px-to-em(32);
+    }
+    &__photo {
+      max-width: 178px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    &__link {
+      font-size: 1em;
+    }
+    &__link::before {
+      margin-top: -10px;
+      width: 36px;
+      height: 36px;
+    }
+    &__photo {
+      max-width: 150px;
+    }
   }
 }
