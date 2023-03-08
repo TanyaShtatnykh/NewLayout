@@ -8,15 +8,15 @@
     margin-bottom: 8px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 59px;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(59, 40);
     text-transform: uppercase;
     color: #000000;
   }
   &__text {
     max-width: 500px;
     margin: 32px 0;
-    font-size: 17px;
+    font-size: px-to-em(17);
     line-height: 140%;
     color: #32363C;
   }
@@ -31,19 +31,55 @@
     padding: 30px 58px 78px;
     text-align: center;
     background-color: #F5F8F9;
+    transition: 0.5s;
   }
   &__min-value {
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 80px;
-    line-height: 119px;
+    font-size: px-to-em(80);
+    line-height: lh-to-pct(119, 80);
     text-transform: uppercase;
     color: #32363C;
   }
   &__comment {
-    font-size: 17px;
+    font-size: px-to-em(17);
     line-height: 140%;
     color: #32363C;
+  }
+  @media screen and (max-width: 1100px) {
+    margin: 80px auto 50px;
+    padding: 0 15px;
+
+    &__condition {
+      min-width: 470px;
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    margin: 80px auto 50px;
+
+    &__conditions {
+      margin-top: 8px;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    &__condition {
+      min-width: 290px;
+      padding: 20px 15px;
+    }
+    &__comment {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    &__condition {
+      min-width: 280px;
+      padding: 20px 15px;
+    }
+    &__min-value {
+      font-size: px-to-em(70);
+    }
   }
 }

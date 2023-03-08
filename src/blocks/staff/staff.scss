@@ -1,7 +1,9 @@
 .staff {
   width: 100%;
   max-width: 1080px;
-  margin: 130px auto 66px;
+  margin: 130px auto 40px;
+  display: flex;
+  flex-direction: column;
 
   &__history {
     display: flex;
@@ -13,22 +15,23 @@
     max-width: 600px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 59px;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(59, 40);
     text-transform: uppercase;
     color: #1A1C1D;
   }
-  &__link-history {
+  &__link-history, &__link-about {
     padding: 20px 60px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(22, 18);
     color: #FFFFFF;
     background: #009688;
     border-radius: 100px;
+    transition: 0.5s;
   }
-  &__link-history:hover {
+  &__link-history:hover, &__link-about:hover {
     background: #00B0A0;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
   }
@@ -40,17 +43,63 @@
     display: flex;
     flex-direction: column;
     max-width: 330px;
+    margin-bottom: 26px;
   }
   &__name {
     margin: 30px 0 6px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: px-to-em(24);
     line-height: 120%;
     color: #32363C;
   }
   &__post {
-    font-size: 15px;
+    font-size: px-to-em(15);
     line-height: 140%;
     color: #989A9D;
+  }
+  &__link-about {
+    display: none;
+  }
+  @media screen and (max-width: 1100px) {
+    padding: 0 15px;
+    &__photo, &__post {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &__title {
+      margin: 0 auto;
+      font-size: px-to-em(36);
+      text-align: center;
+    }
+    &__link-history {
+      display: none;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__person {
+      padding: 0 6px;
+    }
+    &__name {
+      margin-top: 20px;
+    }
+    &__link-about {
+      display: block;
+      align-self: center;
+      margin: 20px 0 40px;
+      padding: 20px 70px;
+    }
+  }
+  @media screen and (max-width: 524px) {
+    &__title {
+      margin: 0;
+      font-size: px-to-em(32);
+      text-align: left;
+    }
+    &__person {
+      padding: 0;
+    }
   }
 }

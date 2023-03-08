@@ -14,10 +14,14 @@
     max-width: 300px;
     font-family: 'Oswald';
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(36, 24);
     text-transform: uppercase;
     color: #1A1C1D;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
   }
   &__field {
     width: 444px;
@@ -25,9 +29,10 @@
     padding: 20px;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
-    font-size: 17px;
+    font-size: px-to-em(17);
     line-height: 140%;
     color: rgba(#32363C, 0.4);
+    transition: 0.5s;
   }
   &__field:hover {
     border: 1px solid #989A9D;
@@ -45,6 +50,7 @@
     line-height: 22px;
     font-weight: 600;
     color: #FFFFFF;
+    transition: 0.5s;
   }
   &__submit:hover {
     background: #00B0A0;
@@ -53,5 +59,39 @@
   &__submit:active {
     background: #007D71;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  @media screen and (max-width: 1100px) {
+    &__area {
+      padding: 50px 15px;
+    }
+    &__title {
+      max-width: 280px;
+    }
+    &__field {
+      width: 400px;
+      margin-right: 10px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &__area {
+      padding: 60px 15px;
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__form {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 678px) {
+    &__form {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__field {
+      width: 100%;
+      margin-right: 0;
+    }    
   }
 }

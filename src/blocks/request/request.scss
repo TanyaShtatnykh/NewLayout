@@ -76,6 +76,7 @@
     color: rgba(#32363C, 0.4);
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
+    transition: 0.5s;
   }
   &__field:hover {
     border: 1px solid #989A9D;
@@ -93,6 +94,7 @@
     background: #009688;
     border-radius: 100px;
     border: none;
+    transition: 0.5s;
     &--exam {
       padding: 20px 82px;
       font-size: px-to-em(18);
@@ -135,7 +137,6 @@
       padding: 0 15px;
     }
     &__photo {
-      max-width: 375;
       object-fit: contain;
       &--cup {
         margin-right: -22px;
@@ -154,7 +155,7 @@
     &__photo {
       width: 340px;
       &--holder {
-        margin-left: 0;
+        margin-left: -15px;
       }
     }
     &__field {
