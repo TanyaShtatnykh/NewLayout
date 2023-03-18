@@ -139,6 +139,7 @@
       flex-direction: column;
       z-index: 5;
       width: 38px;
+      height: 38px;
       margin-top: auto;
       padding: 0 4px;
       cursor: pointer;
@@ -149,6 +150,7 @@
       border: 2.75px solid #32363C;
       border-radius: 20px;
       transition: 0.5s;
+      background-color: #32363C;
       &--open:first-child {
         transform: translateY(8px) rotate(45deg);
       }
