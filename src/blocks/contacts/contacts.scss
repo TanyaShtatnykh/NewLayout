@@ -1,0 +1,62 @@
+.contacts {
+  max-width: 225px;
+  &--header {
+    display: none;
+  }
+  &__phone-link {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(36, 24);
+    text-transform: uppercase;
+    color: #32363C;
+    transition: .6s;
+  }
+  &__phone-link:hover, &__email-link:hover {
+    color: #009688;
+  }
+  &__socials {
+    display: flex;
+    margin: 16px 0;
+  }
+  &__social-item {
+    margin-right: 10px;
+  }
+  &__social-icon:hover {
+    circle {
+      transition: 0.6s;
+      fill: #009688;
+    }
+    g {
+      opacity: 1;
+    }
+    path {
+      fill: white;
+    }
+  }
+  &__email-link, &__address {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: lh-to-pct(19, 16);
+    color: #2D2D30;
+    transition: 0.6s;
+  }
+  &__address {
+    margin: 16px 0 4px;
+  }
+  &__map-link {
+    font-weight: 500;
+    font-size: px-to-em(15);
+    line-height: 140%;
+    color: #2F80ED;
+  }
+  @media screen and (max-width: 991px) {
+    &--header {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0;
+    }
+  }
+}

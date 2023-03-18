@@ -16,20 +16,8 @@ mixin footer(modifier)
           li.footer__category-item: a.footer__category-link(href="#") Частые вопросы
           li.footer__category-item: a.footer__category-link(href="#") Реквизиты
           li.footer__category-item: a.footer__category-link(href="#") О компании ПКМ
-      .footer__block
-        a.footer__phone-link(href="tel:+78126034911") +7 (812) 603 49 11
-        ul.footer__socials
-          li.footer__social-item
-            a.footer__social-link(href="#"): img.footer__social-icon(src="img/tg.png", alt="Telegram")
-          li.footer__social-item
-            a.footer__social-link(href="#"): img.footer__social-icon(src="img/ig.png", alt="Instagram")
-          li.footer__social-item
-            a.footer__social-link(href="#"): img.footer__social-icon(src="img/vk.png", alt="VK")
-        a.footer__email-link(href="mailto:info@pcmonline.ru") info@pcmonline.ru
-        p.footer__address Санкт-Петербург, наб. Обводного канала д. 24
-        a.footer__map-link(href="#") Смотреть на карте
+      +contacts
       p.footer__alt-text Использование любых материалов с этого сайта возможно только после письменного согласия владельца авторских прав
     .footer__copyright
       p.footer__copy © 2013-2021 “ПКМ”
       a.footer__privacy-link(href="#") Политика конфиденциальности
-//- Я видела,что в мобилке там блок с пунктами меню переносится целиком, поэтому мб его нужно сгруппировать вместе, но это не точно, поэтому не стала делать
