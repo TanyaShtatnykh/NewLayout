@@ -2,6 +2,10 @@
   position: relative;
   background: #F5F8F9;
 
+  &--header {
+    display: none;
+  }
+
   &__area {
     display: flex;
     justify-content: space-between;
@@ -121,7 +125,7 @@
   }
   &__text {
     max-width: 445px;
-    font-size: px-to-em(18);
+    font-size: px-to-em(15);
     line-height: 140%;
     color: #989A9D;
   }
@@ -167,6 +171,14 @@
     }
   }
   @media screen and (max-width: 991px) {
+    &--header--active {
+      display: block;
+      position: absolute;
+      width: 100%;
+      .request__info {
+        padding: 40px 0 110px;
+      }
+    }
     &__area {
       flex-direction: column;
     }
@@ -179,6 +191,9 @@
       }
       &--exam {
         margin-left: 0;
+      }
+      &--header {
+        display: none;
       }
     }
     &__info {
@@ -195,6 +210,14 @@
     }
   }
   @media screen and (max-width: 678px) {
+    &--header--active {
+      .request__title {
+        text-align: center;
+      }
+      .request__text {
+        max-width: 100%;
+      }
+    }
     &__photo {
       margin-top: 40px;
       &--holder {

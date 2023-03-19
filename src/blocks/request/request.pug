@@ -1,6 +1,6 @@
 mixin request(photo="Pack", title="")
-  section.request&attributes(attributes)
-    .request__area(class=photo==="Holder" ? "request__area--holder" : "")
+  section.request&attributes(attributes)(class=photo==="Header" ? "request--header" : "")
+    .request__area
       img.request__photo(src=`img/request${photo}.png` alt="" class=photo==="Holder" ? "request__photo--holder" : "" class=photo==="Cup" ? "request__photo--cup" : "" class=photo==="Exam" ? "request__photo--exam" : "")
       .request__info(class=photo==="Holder" ? "request__info--holder" : "" class=photo==="Cup" ? "request__info--cup" : "")
         if (photo==="Cup")
@@ -17,5 +17,3 @@ mixin request(photo="Pack", title="")
           else
             button.request__submit Оставить заявку
         p.request__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.
-
-//- убрала переменную slogan

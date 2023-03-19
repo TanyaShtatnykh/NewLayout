@@ -127,11 +127,13 @@
   }
   @media screen and (max-width: 991px) {
     &__area {
+      min-height: 56px;
       max-height: 56px;
       padding-bottom: 0;
     }
     &__mail {
       display: block;
+      z-index: 5;
       margin-top: auto;
     }
     &__burger-btn {
@@ -164,6 +166,9 @@
     &__logo-link {
       position: static;
       transform: translateY(35%);
+      &--hidden {
+        display: none;
+      }
     }
     &__info {
       display: none;
