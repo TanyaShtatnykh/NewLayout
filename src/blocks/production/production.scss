@@ -58,14 +58,13 @@
     }
     &__stage-title {
       display: flex;
-      align-self: flex-start;
       width: 100%;
       max-width: 100%;
       margin-right: 0;
     }
     &__stage-title::after {
-      content: url(/img/arrowDown.png);
-      margin-left: auto; 
+      content: url("../img/arrowDown.png");
+      margin-left: auto;
     }
     &__stage-title--open::after {
       transform: rotate(180deg);
