@@ -1,8 +1,6 @@
 .contacts {
   max-width: 225px;
-  &--header {
-    display: none;
-  }
+  
   &__phone-link {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -23,16 +21,20 @@
   &__social-item {
     margin-right: 10px;
   }
-  &__social-icon:hover {
-    circle {
-      transition: 0.6s;
-      fill: #009688;
-    }
-    g {
+  &__social-link {
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 50%;
+    opacity: 0.5;
+      svg {
+        fill: #2D2D30;
+      }
+    &:hover {
+      background: #009688;
       opacity: 1;
-    }
-    path {
-      fill: white;
+      svg {
+        fill: white;
+      }
     }
   }
   &__email-link, &__address {
@@ -51,12 +53,5 @@
     font-size: px-to-em(15);
     line-height: 140%;
     color: #2F80ED;
-  }
-  @media screen and (max-width: 991px) {
-    &--header {
-      display: flex;
-      flex-direction: column;
-      margin: 40px 0;
-    }
   }
 }

@@ -3,6 +3,7 @@
 
 
 
+
 $(function () {
   $('.header__burger-btn').on('click', function() {
     if ($('.request--header').hasClass('request--header--active')) {
@@ -32,7 +33,6 @@ $(function () {
 });
 
 
-
 $(function () {
   var listItem = $('.production__stage');
 
@@ -56,7 +56,13 @@ $(function () {
   })
 });
 
-
+$(function () {
+  $('.reviews__slides').slick({
+    prevArrow: $('.reviews__btn--prev'),
+    nextArrow: $('.reviews__btn--next'),
+    adaptiveHeight: true, 
+  });
+});
 
 
 

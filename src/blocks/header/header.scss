@@ -1,4 +1,7 @@
 .header {
+  &__contacts {
+    display: none;
+  }
   &__area {
     display: flex;
     align-items: center;
@@ -126,6 +129,11 @@
     }
   }
   @media screen and (max-width: 991px) {
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0;
+    }
     &__area {
       min-height: 56px;
       max-height: 56px;
