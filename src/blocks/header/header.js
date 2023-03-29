@@ -1,4 +1,14 @@
 $(function () {
+  $('.header__request-btn').on('click', function () {
+    $('.popup').addClass('popup--open');
+  })
+});
+
+
+
+
+
+$(function () {
   $('.header__burger-btn').on('click', function() {
     if ($('.request--header').hasClass('request--header--active')) {
       $('.request--header').removeClass('request--header--active');

@@ -1,0 +1,98 @@
+.popup {
+  display: none;
+  &--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+  }
+  &__content {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: #FFFFFF; 
+  }
+  &__close {
+    align-self: flex-end;
+    height: 38px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    &:hover {
+      path {
+        stroke: #009688;
+      }
+    }
+  }
+  &__title {
+    max-width: 500px;
+    margin-bottom: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: px-to-em(40);
+    line-height: lh-to-pct(59, 40);
+    text-align: center;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+  &__text {
+    max-width: 400px;
+    margin-bottom: 30px;
+    font-size: px-to-em(17);
+    line-height: 140%;
+    text-align: center;
+    color: #32363C;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px 30px;
+  }
+  &__field {
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 20px 30px;
+    border: 1px solid #EAEAEA;
+    font-size: px-to-em(17);
+    line-height: 140%;
+    color: #32363C;
+    opacity: 0.4;
+    transition: 0.5s;
+    &:focus {
+      outline: none;
+      border: 1px solid #009688;
+    }
+  }
+  &__btn {
+    margin: 16px;
+    padding: 20px 50px;
+    font-weight: 600;
+    font-size: px-to-em(18);
+    line-height: lh-to-pct(22, 18);
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: #009688;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      background: #00B0A0;
+      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    }
+    &:active {
+      background: #007D71;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

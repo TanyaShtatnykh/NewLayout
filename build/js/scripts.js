@@ -3,6 +3,15 @@
 
 
 
+$(function () {
+  $('.header__request-btn').on('click', function () {
+    $('.popup').addClass('popup--open');
+  })
+});
+
+
+
+
 
 $(function () {
   $('.header__burger-btn').on('click', function() {
@@ -29,6 +38,12 @@ $(function () {
     } else {
       $('.header__logo-link').removeClass('header__logo-link--hidden');
     }
+  });
+});
+
+$(function () {
+  $('.popup__close').on('click', function () {
+    $('.popup').removeClass('popup--open');
   });
 });
 

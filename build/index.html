@@ -459,19 +459,31 @@
           <p class="footer__copy">© 2013-2021 “ПКМ”</p><a class="footer__privacy-link" href="#">Политика конфиденциальности</a>
         </div>
       </footer>
-      <section class="request">
-        <div class="request__area"><img class="request__photo request__photo--exam" src="img/requestExam.png" alt="">
-          <div class="request__info">
-            <p class="request__slogan">Кажется получилось!</p>
-            <h2 class="request__title"><span class="request__title-text">Оставьте заявку сейчас!</span><span class="request__title-text">И даже без доп. переменных :D</span></h2>
-            <form class="request__form"> 
-              <input class="request__field" type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required>
-              <button class="request__submit--exam">Погнали</button>
-            </form>
-            <p class="request__text">Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.</p>
-          </div>
+      <div class="popup">
+        <div class="popup__content">
+          <button class="popup__close">
+             <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_369_1)">
+<path d="M28.5 9.5L9.5 28.5" stroke="#989A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 9.5L28.5 28.5" stroke="#989A9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_369_1">
+<rect width="38" height="38" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+          </button>
+          <h2 class="popup__title">Оставьте заявку и&nbsp;получите оптовый прайс на весь ассортимент кофе</h2>
+          <p class="popup__text">Мы позвоним вам, вышлем оптовый прайс и&nbsp;ответим на все вопросы.</p>
+          <form class="popup__form"> 
+            <input class="popup__field" type="tel" placeholder="Ваш номер телефона" pattern="[0-9]{10}" required>
+            <input class="popup__field" type="email" placeholder="Введите ваш email" required>
+            <button class="popup__btn" type="submit">Оставить заявку</button>
+          </form>
         </div>
-      </section>
+      </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
