@@ -25,10 +25,9 @@
   &__slogan {
     display: flex;
     align-items: center;
-    margin: 0 0 18px -8px;
+    margin-bottom: 18px;
   }
   &__phrase {
-    margin: 0 8px -5px;
     padding: 0 10px;
     font-size: px-to-em(24);
     line-height: 120%;
@@ -37,6 +36,7 @@
     border-radius: 20px;
   }
   &__dash {
+    margin: 0 8px;
     font-size: px-to-em(40);
     line-height: 100%;
     color: rgba(#000000, 0.2);
@@ -61,7 +61,6 @@
     }
     &__photo {
       max-width: 450px;
-      height: auto;
       object-fit: contain;
     }
   }
@@ -100,7 +99,6 @@
       font-size: px-to-em(16);
     }
     &__dash {
-      margin-top: 2px;
       font-weight: 600;
       font-size: px-to-em(16);
     }
@@ -120,8 +118,6 @@
         font-size: px-to-em(12);
       }
       &__dash {
-        margin-top: 6px;
-        font-weight: 600;
         font-size: px-to-em(12);
       }
       &__text {

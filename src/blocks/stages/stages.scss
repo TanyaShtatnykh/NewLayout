@@ -1,7 +1,8 @@
 .stages {
   width: 100%;
   max-width: 1080px;
-  margin: 0 auto 138px;
+  margin: 0 auto;
+  padding-bottom: 138px;
   
   &__list {
     display: flex;
@@ -13,17 +14,14 @@
     display: flex;
     align-items: flex-end;
     max-width: 335px;
-    font-weight: 600;
-    font-size: 24px;
-    color: #32363C;
   }
   &__item:not(:nth-child(3n))::after {
     content: ">";
     margin-left: 10px;
     font-family: 'Oswald';
     font-weight: 500;
-    font-size: 80px;
-    line-height: 105px;
+    font-size: px-to-em(80);
+    line-height: lh-to-pct(105, 80);
     color: #F5F8F9;
   }
   &__text {
@@ -31,7 +29,8 @@
     flex-direction: column;
     justify-content: flex-start;
     font-weight: 600;
-    font-size: 24px;
+    font-size: px-to-em(24);
+    line-height: 120%;
     color: #32363C;
   }
   &__text::before {
@@ -47,7 +46,8 @@
     color: #F5F8F9;
   }
   @media screen and (max-width: 1100px) {
-    padding: 15px;
+    padding: 15px 15px 80px;
+
     &__list {
       justify-content: space-around;
     }

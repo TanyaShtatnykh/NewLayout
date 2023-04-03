@@ -1,15 +1,13 @@
 .advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 130px 0 114px;
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    padding: 130px 0 114px;
-  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -28,20 +26,16 @@
     color: #32363C;
   }
   @media screen and (max-width: 1100px) {
-    &__list {
-      padding: 80px 15px;
-    }
+    padding: 80px 15px;
+
     &__item {
       max-width: 300px;
     }
   }
   @media screen and (max-width: 991px) {
-    &__list {
-      padding-bottom: 40px;
-    }
-    &__list {
-      justify-content: space-around;
-    }
+    justify-content: space-around;
+    padding-bottom: 40px;
+ 
     &__item {
       margin-bottom: 40px;
     }

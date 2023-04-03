@@ -1,12 +1,13 @@
 .production {
   width: 100%;
   max-width: 1080px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  padding-bottom: 100px;
 
   &__title {
     max-width: 480px;
     margin-bottom: 40px;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: px-to-em(40);
     line-height: lh-to-pct(59, 40);
@@ -42,7 +43,8 @@
     color: #32363C;
   }
   @media screen and (max-width: 1100px) {
-    padding: 0 15px;
+    padding: 0 15px 80px;
+    
     &__stage-title {
       min-width: 300px;
       margin-right: 20px;

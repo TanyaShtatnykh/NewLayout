@@ -1,11 +1,6 @@
 .header {
-  &__contacts {
-    display: none;
-  }
   &__area {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-dir(row, space-between, center);
     position: relative;
     width: 100%;
     max-width: 1080px;
@@ -135,8 +130,7 @@
       margin: 40px 0;
     }
     &__area {
-      min-height: 56px;
-      max-height: 56px;
+      height: 56px;
       padding-bottom: 0;
     }
     &__mail {
@@ -210,9 +204,6 @@
       font-size: px-to-em(18);
       line-height: lh-to-pct(22, 18);
       color: #32363C;
-    }
-    &__request {
-      display: none;
     }
   }
 }

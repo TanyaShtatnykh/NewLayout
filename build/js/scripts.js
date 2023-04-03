@@ -41,12 +41,12 @@ $(function () {
   });
 });
 
+
 $(function () {
   $('.popup__close').on('click', function () {
     $('.popup').removeClass('popup--open');
   });
 });
-
 
 $(function () {
   var listItem = $('.production__stage');

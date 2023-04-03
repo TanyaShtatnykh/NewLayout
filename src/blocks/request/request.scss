@@ -1,11 +1,9 @@
 .request {
   position: relative;
   background: #F5F8F9;
-
   &--header {
     display: none;
   }
-
   &__area {
     display: flex;
     justify-content: space-between;
@@ -25,9 +23,6 @@
     }
     &--cup {
       margin-left: -22px;
-    }
-    &--exam {
-      margin-left: auto;
     }
   }
   &__info {
@@ -81,13 +76,13 @@
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     transition: 0.5s;
-  }
-  &__field:hover {
-    border: 1px solid #989A9D;
-  }
-  &__field:focus {
-    outline: none;
-    border: 1px solid #009688;
+    &:hover {
+      border: 1px solid #989A9D;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid #009688;
+    }
   }
   &__submit {
     padding: 20px 45px;
@@ -99,29 +94,15 @@
     border-radius: 100px;
     border: none;
     transition: 0.5s;
-    &--exam {
-      padding: 20px 82px;
-      font-size: px-to-em(18);
-      line-height: lh-to-pct(22, 18);
-      font-weight: 600;
-      color: #FFFFFF;
-      background: red;
-      border-radius: 100px;
-      border: none;
+    &:hover {
+      background: #00B0A0;
+      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
     }
-  }
-  &__submit:hover {
-    background: #00B0A0;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-  }
-  &__submit--exam:hover {
-    background: black;
-    cursor: pointer;
-  }
-  &__submit:active {
-    background: #007D71;
-    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    &:active {
+      background: #007D71;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
   }
   &__text {
     max-width: 445px;
@@ -189,12 +170,6 @@
         margin-top: -5%;
         margin-left: -50%;
       }
-      &--exam {
-        margin-left: 0;
-      }
-      &--header {
-        display: none;
-      }
     }
     &__info {
       margin-left: 0;
@@ -232,6 +207,9 @@
     }
     &__info {
       padding: 80px 0 0 0;
+    }
+    &__title--pack {
+      text-align: center;
     }
     &__form {
       flex-direction: column;
